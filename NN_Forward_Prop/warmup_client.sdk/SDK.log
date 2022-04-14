@@ -1,0 +1,304 @@
+01:19:38 INFO  : Registering command handlers for SDK TCF services
+01:19:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\parksa64\mid_demo\warmup_client\warmup_client.sdk\temp_xsdb_launch_script.tcl
+01:19:40 INFO  : XSCT server has started successfully.
+01:19:41 INFO  : Successfully done setting XSCT server connection channel  
+01:19:41 INFO  : Successfully done setting SDK workspace  
+01:19:41 INFO  : Processing command line option -hwspec C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/design_1_wrapper.hdf.
+01:21:27 INFO  : Refreshed build settings on project NN2
+01:21:33 INFO  : Inferring section assignments and sizes from elf file: C:\Users\parksa64\mid_demo\warmup_client\warmup_client.sdk\NN2\Debug\NN2.elf
+01:21:50 INFO  : Successfully generated C:\Users\parksa64\mid_demo\warmup_client\warmup_client.sdk\NN2\src\lscript.ld.
+01:21:50 INFO  : Applying linker script to all configurations of project NN2.
+01:21:50 INFO  : Setting rebuild state to true for all configurations of project NN2.
+01:22:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:22:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:22:27 INFO  : FPGA configured successfully with bitstream "C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/design_1_wrapper_hw_platform_0/download.bit"
+01:22:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:22:36 INFO  : 'fpga -state' command is executed.
+01:22:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:22:37 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:22:37 INFO  : 'jtag frequency' command is executed.
+01:22:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:22:37 INFO  : Context for processor 'microblaze_0' is selected.
+01:22:37 INFO  : System reset is completed.
+01:22:40 INFO  : 'after 3000' command is executed.
+01:22:40 INFO  : Context for processor 'microblaze_0' is selected.
+01:22:41 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:22:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:22:41 INFO  : Context for processor 'microblaze_0' is selected.
+01:22:41 INFO  : 'con' command is executed.
+01:22:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:22:41 INFO  : Disconnected from the channel tcfchan#1.
+01:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:24:20 INFO  : 'fpga -state' command is executed.
+01:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:24:20 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:24:20 INFO  : 'jtag frequency' command is executed.
+01:24:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:24:20 INFO  : Context for processor 'microblaze_0' is selected.
+01:24:20 INFO  : System reset is completed.
+01:24:23 INFO  : 'after 3000' command is executed.
+01:24:23 INFO  : Context for processor 'microblaze_0' is selected.
+01:24:24 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:24:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:24:24 INFO  : Context for processor 'microblaze_0' is selected.
+01:24:24 INFO  : 'con' command is executed.
+01:24:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:24:24 INFO  : Disconnected from the channel tcfchan#2.
+01:25:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:25:26 INFO  : 'fpga -state' command is executed.
+01:25:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:25:27 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:25:27 INFO  : 'jtag frequency' command is executed.
+01:25:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:25:27 INFO  : Context for processor 'microblaze_0' is selected.
+01:25:27 INFO  : System reset is completed.
+01:25:30 INFO  : 'after 3000' command is executed.
+01:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+01:25:31 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:25:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:25:31 INFO  : Context for processor 'microblaze_0' is selected.
+01:25:31 INFO  : 'con' command is executed.
+01:25:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:25:31 INFO  : Disconnected from the channel tcfchan#3.
+01:26:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:26:55 INFO  : 'fpga -state' command is executed.
+01:26:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:26:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:26:56 INFO  : 'jtag frequency' command is executed.
+01:26:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:26:56 INFO  : Context for processor 'microblaze_0' is selected.
+01:26:56 INFO  : System reset is completed.
+01:26:59 INFO  : 'after 3000' command is executed.
+01:26:59 INFO  : Context for processor 'microblaze_0' is selected.
+01:27:00 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:27:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:27:00 INFO  : Context for processor 'microblaze_0' is selected.
+01:27:00 INFO  : 'con' command is executed.
+01:27:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:27:00 INFO  : Disconnected from the channel tcfchan#4.
+01:28:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:28:17 INFO  : 'fpga -state' command is executed.
+01:28:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:28:17 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:28:17 INFO  : 'jtag frequency' command is executed.
+01:28:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:28:17 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:17 INFO  : System reset is completed.
+01:28:20 INFO  : 'after 3000' command is executed.
+01:28:20 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:21 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:28:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:28:21 INFO  : Context for processor 'microblaze_0' is selected.
+01:28:21 INFO  : 'con' command is executed.
+01:28:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:28:21 INFO  : Disconnected from the channel tcfchan#5.
+01:30:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:30:08 INFO  : 'fpga -state' command is executed.
+01:30:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:30:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:30:08 INFO  : 'jtag frequency' command is executed.
+01:30:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:30:08 INFO  : Context for processor 'microblaze_0' is selected.
+01:30:08 INFO  : System reset is completed.
+01:30:11 INFO  : 'after 3000' command is executed.
+01:30:11 INFO  : Context for processor 'microblaze_0' is selected.
+01:30:12 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:30:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:30:12 INFO  : Context for processor 'microblaze_0' is selected.
+01:30:12 INFO  : 'con' command is executed.
+01:30:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:30:12 INFO  : Disconnected from the channel tcfchan#6.
+01:31:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:31:26 INFO  : 'fpga -state' command is executed.
+01:31:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:31:26 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:31:26 INFO  : 'jtag frequency' command is executed.
+01:31:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:31:26 INFO  : Context for processor 'microblaze_0' is selected.
+01:31:26 INFO  : System reset is completed.
+01:31:29 INFO  : 'after 3000' command is executed.
+01:31:29 INFO  : Context for processor 'microblaze_0' is selected.
+01:31:30 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:31:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:31:30 INFO  : Context for processor 'microblaze_0' is selected.
+01:31:30 INFO  : 'con' command is executed.
+01:31:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:31:30 INFO  : Disconnected from the channel tcfchan#7.
+01:32:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:32:34 INFO  : 'fpga -state' command is executed.
+01:32:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:32:34 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:32:34 INFO  : 'jtag frequency' command is executed.
+01:32:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:32:34 INFO  : Context for processor 'microblaze_0' is selected.
+01:32:34 INFO  : System reset is completed.
+01:32:37 INFO  : 'after 3000' command is executed.
+01:32:37 INFO  : Context for processor 'microblaze_0' is selected.
+01:32:38 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:32:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:32:38 INFO  : Context for processor 'microblaze_0' is selected.
+01:32:38 INFO  : 'con' command is executed.
+01:32:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:32:38 INFO  : Disconnected from the channel tcfchan#8.
+01:36:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:36:13 INFO  : 'fpga -state' command is executed.
+01:36:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:36:13 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:36:13 INFO  : 'jtag frequency' command is executed.
+01:36:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:36:13 INFO  : Context for processor 'microblaze_0' is selected.
+01:36:13 INFO  : System reset is completed.
+01:36:16 INFO  : 'after 3000' command is executed.
+01:36:16 INFO  : Context for processor 'microblaze_0' is selected.
+01:36:17 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:36:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:36:17 INFO  : Context for processor 'microblaze_0' is selected.
+01:36:17 INFO  : 'con' command is executed.
+01:36:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:36:17 INFO  : Disconnected from the channel tcfchan#9.
+01:37:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A" && level==0} -index 0' command is executed.
+01:37:32 INFO  : 'fpga -state' command is executed.
+01:37:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:37:32 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646023A' is selected.
+01:37:32 INFO  : 'jtag frequency' command is executed.
+01:37:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:37:32 INFO  : Context for processor 'microblaze_0' is selected.
+01:37:32 INFO  : System reset is completed.
+01:37:35 INFO  : 'after 3000' command is executed.
+01:37:35 INFO  : Context for processor 'microblaze_0' is selected.
+01:37:36 INFO  : The application 'C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf' is downloaded to processor 'microblaze_0'.
+01:37:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+dow C:/Users/parksa64/mid_demo/warmup_client/warmup_client.sdk/NN2/Debug/NN2.elf
+----------------End of Script----------------
+
+01:37:36 INFO  : Context for processor 'microblaze_0' is selected.
+01:37:36 INFO  : 'con' command is executed.
+01:37:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646023A"} -index 0
+con
+----------------End of Script----------------
+
+01:37:36 INFO  : Disconnected from the channel tcfchan#10.
