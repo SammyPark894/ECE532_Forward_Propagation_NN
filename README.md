@@ -1,4 +1,4 @@
-# Please view this file in raw format
+# Please view this file in raw or source format
 
 # ECE532_Forward_Propagation_NN
 
