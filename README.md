@@ -1,3 +1,5 @@
+# Please view this file in raw format
+
 # ECE532_Forward_Propagation_NN
 
 Design Tree
