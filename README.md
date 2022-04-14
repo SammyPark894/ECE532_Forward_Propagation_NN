@@ -35,3 +35,10 @@ The neural network can be updated by editing the axi_noweights through IP editin
 Everytime it is updated, make sure to also update it on the NN_Forward_Prop project.
 
 The NN2_bsp folder contains various driver files and should be regenerated the when this project is opened the first time.
+
+Many generated files from NN_Forward_Prop has been deleted before the git commit.
+If the sdk application does not open the files as intended, you can regenerate them by first making a new sdk project and opening the template for TCP Echo Server.
+Then, copy and paste the echo.c and main.c files from this git to that project directory.
+Also, make sure to regenerate the BSP files such that the custom IP drivers are generated.
+
+When working or modifying this project it is recommended to create the block diagram using the tcl script for NN_Forward_Prop and copying the whole axi_noweights IP folder over to workspaces.
