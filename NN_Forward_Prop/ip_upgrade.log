@@ -1,0 +1,146 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Wed Mar 30 00:58:17 2022
+| Host         : BA3145WS06 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_noweights_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_noweights_0_1 (utoronto.ca:user:axi_noweights:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Wed Mar 30 00:03:34 2022
+| Host         : BA3145WS06 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_noweights_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_noweights_0_1 (utoronto.ca:user:axi_noweights:1.0) from (Rev. 21) to (Rev. 22)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_noweights_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'con1_weight'
+
+-Upgrade has removed port 'con2_weight'
+
+-Upgrade has removed port 'conv2_out0'
+
+-Upgrade has removed port 'conv2_out1'
+
+-Upgrade has removed port 'conv2_out2'
+
+-Upgrade has removed port 'lin_bias'
+
+-Upgrade has removed port 'lin_in'
+
+-Upgrade has removed port 'lin_weight'
+
+-Upgrade has removed port 'mean_out'
+
+-Upgrade has added port 'Om_out'
+
+-Upgrade has added port 'Xm_out'
+
+-Upgrade has added port 'Ym_out'
+
+-Upgrade has added port 'toShift_out'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Mon Mar 28 03:05:59 2022
+| Host         : BA3145WS03 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_noweights_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_noweights_0_1 (utoronto.ca:user:axi_noweights:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Mon Mar 28 02:32:10 2022
+| Host         : BA3145WS03 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_noweights_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_axi_noweights_0_1 (utoronto.ca:user:axi_noweights:1.0) from (Rev. 19) to (Rev. 20)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_noweights_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'lin_weight0'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Mon Mar 28 02:30:50 2022
+| Host         : BA3145WS03 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_noweights_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_noweights_0_1 (utoronto.ca:user:axi_noweights:1.0) from (Rev. 18) to (Rev. 19)
+
